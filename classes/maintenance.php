@@ -2,13 +2,14 @@
 /**
  * Add maintenance mode
  *
- * @package    Map
+ * @package    Maintenance
  * @version    0.1
  * @author     Hinashiki
  * @license    MIT License
- * @copyright  2014 - Hinashiki
- * @link       https://github.com/hinashiki/fuelphp-map
+ * @copyright  2015 - Hinashiki
+ * @link       https://github.com/hinashiki/fuelphp-maintenance
  */
+
 namespace Maintenance;
 
 class MaintenanceMode
