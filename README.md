@@ -12,19 +12,18 @@ throw new \HttpServerMaintenanceException("your maintenance message.");
 
 ## Set maintenance mode
 create fuel/app/config/maintenance.php  
-and please set like this.
+please set like this.
 ```
 return array(
   "maintenance_mode" => true
 );
 ```
-
+and insert into Conrtoller::before() as below.
 ```
-check maintenance mode.
 MaintenanceMode::check();
 ```
-display maintenance page forcedly.
-when maintenance_mode === true .
+It's displayed maintenance page forcedly.  
+if you turn off it, please set maintenance_mode => false.
 
 ## Change maintenance view
 create fuel/app/views/503.php and customize it.
